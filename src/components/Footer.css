@@ -1,0 +1,135 @@
+
+a.logo1 {
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.397); 
+     background: rgba(255, 255, 255, 0.068); 
+    overflow: hidden;
+   
+    font-weight: 600;
+    gap: 8px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: 0.2s;
+    border: 1px solid transparent;
+  }
+  
+  a.logo1:hover {
+    border-color: rgba(255, 255, 255, 0.623);
+    background:  #0077B5;
+    box-shadow: 0 6px rgba(255, 255, 255, 0.623);
+    transform: translateY(-6px);
+  }
+  
+  a.logo1:active {
+    transform: translateY(2px);
+    box-shadow: none;
+  }
+  
+
+
+
+  
+a.logo2 {
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.397); 
+     background: rgba(255, 255, 255, 0.068); 
+    overflow: hidden;
+   
+    font-weight: 600;
+    gap: 8px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: 0.2s;
+    border: 1px solid transparent;
+  }
+  
+  a.logo2:hover {
+    border-color: rgba(255, 255, 255, 0.623);
+    background: #333;
+    box-shadow: 0 6px rgba(255, 255, 255, 0.623);
+    transform: translateY(-6px);
+  }
+  
+  a.logo2:active {
+    transform: translateY(2px);
+    box-shadow: none;
+  }
+  
+
+
+
+  
+a.logo3 {
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.397); 
+     background: rgba(255, 255, 255, 0.068); 
+    overflow: hidden;
+   
+    font-weight: 600;
+    gap: 8px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: 0.2s;
+    border: 1px solid transparent;
+  }
+  
+  a.logo3:hover {
+    border-color: rgba(255, 255, 255, 0.623);
+    background: linear-gradient(to bottom, #8a3ab5, #7a288a, #f953c6, #ffc107, #ffff00);
+    box-shadow: 0 6px rgba(255, 255, 255, 0.623);
+    transform: translateY(-6px);
+  }
+  
+  a.logo3:active {
+    transform: translateY(2px);
+    box-shadow: none;
+  }
+  
+
+  /* From Uiverse.io by WhiteNervosa */ 
+.line {
+
+  color: #e1e1e1;
+
+
+  cursor: pointer;
+  position: relative;
+
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.line:focus,
+.line:hover {
+  color: #fff;
+}
+
+.line:focus:after,
+.line:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.line:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}

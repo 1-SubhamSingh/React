@@ -1,0 +1,167 @@
+.contact__card{
+     background-color: solid;
+     border : 2px solid white;
+     border-radius: 0.75rem;
+  }
+
+  .contact__card-icon {
+    color: #25D366; /* WhatsApp green color */
+    font-size: 24px;
+  }
+  
+  .contact__button{
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.25rem;
+  }
+
+.contact__form-div{
+    position: relative;
+    margin-bottom: var(--mb-2);
+    height: 10rem;
+    width: 38rem;
+   
+}
+
+  .contact__form-tag{
+    position: absolute;
+    top: -0.75;
+    left: 1.75;
+    font-size: var(--smaller-font-size);
+    padding: 0.25rem;
+    background-color: var(--body-color);
+    z-index:10;
+  }
+
+
+  .contact__form-input{
+   
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem; 
+    z-index: 1;
+  }
+
+
+  .input {
+    color: white;
+    border: 2px solid #8707ff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    box-shadow: 2px 2px 15px #8707ff inset;
+    max-width: 50%;
+  }
+  
+  /* .input:active {
+    box-shadow: 2px 2px 15px #8707ff inset;
+  }
+   */
+
+
+   .button {
+    --color: #0077ff;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+  }
+  
+  .button::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+  }
+  
+  .button:hover {
+    color: white;
+  }
+  
+  .button:before {
+    top: 100%;
+    left: 100%;
+    transition: 0.3s all;
+  }
+  
+  .button:hover::before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  
+
+.write {
+  font-size: 18px;
+  /* color: grey; */
+  font-family: Poppins;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  display: inline-flex;
+  align-items: center;
+}
+
+.write:focus,
+.write:hover {
+  color: white;
+}
+
+.write:focus:after,
+.write:hover:after {
+  width: 100%;
+
+  left: auto;
+}
+.write:after {
+  content: "";
+  pointer-events: none;
+  bottom: -1px;
+  right: auto; /* Start from the right */
+  left: 0; /* Ensure left is auto to override the initial value */
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 500ms;
+  transition-property: width, right;
+}
+
+.write.svg-icon {
+  width: 0.9em;
+  height: 0.8em;
+  margin-left: 10px;
+  fill: grey;
+  transform: rotate(-45deg);
+  transition: transform 0.5s ease-out;
+}
+
+.write:hover .svg-icon {
+  transform: rotate(0deg);
+  fill: white;
+}
